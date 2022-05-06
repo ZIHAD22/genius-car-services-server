@@ -17,7 +17,7 @@ function verifyJwt(req, res, next) {
   // console.log('insitd veriftJwt ', authHeader)
 
   if (!authHeader) {
-    return res.status(401).send({ message: 'UnAuthorized a Access' })
+    return res.status(401).send({ message: 'UnAuthorized Access' })
   }
 
   const token = authHeader.split(' ')[1]
